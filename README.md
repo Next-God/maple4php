@@ -1,7 +1,6 @@
-# maple phptrigger
-PHP Kits for maple 
-这是maple框架的触发器,目前只实现了write_to_worker,具体参看[maple](https://github.com/dantezhu/maple)
+# maple框架下的php版trigger
 
+这是maple框架的触发器,目前只实现了write_to_worker,具体参看[maple](https://github.com/dantezhu/maple)
 
 # 安装
 ``git clone git@github.com:hushulin/maple.git``
