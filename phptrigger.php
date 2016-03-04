@@ -112,6 +112,14 @@ class Phptrigger
 		fwrite($this->socket, $buf);
 	}
 
+	/**
+	 * 向用户下发消息
+	 */
+	public function FunctionName($value='')
+	{
+		# code...
+	}
+
 	public function connect()
 	{
 		$address = gethostbyname($this->address);
