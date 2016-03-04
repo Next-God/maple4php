@@ -114,8 +114,15 @@ class Phptrigger
 
 	/**
 	 * 向用户下发消息
+	 * @param array mixed $data_list 用户组
+	 * 格式为
+     * [(uids, box), (uids, box, userdata) ...]
+     * uids是一个数组 [-1] 所有已登录连接
+     * uids是一个数组 [-2] 所有连接
+     * uids是一个数组 [-3] 所有未登录连接
+     * userdata可不传，默认为0，conn.userdata & userdata == userdata
 	 */
-	public function FunctionName($value='')
+	public function write_to_users($data_list = [])
 	{
 		# code...
 	}
