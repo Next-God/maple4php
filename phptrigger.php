@@ -57,7 +57,13 @@ class Phptrigger
 		$string = "";
 		switch ($key) {
 			case 'magic':
-				$string = hex2bin(base_convert($value, 10, 16));
+				if ( function_exists('hex2bin') ) {
+					$string = hex2bin(base_convert($value, 10, 16));
+				}else {
+					$tmp = base_convert($value, 10, 16);
+					$string = pack('H'.strlen($tmp) , $tmp);
+				}
+
 				break;
 
 			case 'version':
