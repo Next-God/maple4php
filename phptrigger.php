@@ -115,7 +115,9 @@ class Phptrigger
 		$buf .= $this->genOptions('cmd' , $cmd);
 		$buf .= $this->genOptions('end' , 8);
 		$buf .= $body;
+
 		fwrite($this->socket, $buf);
+
 	}
 
 	/**
@@ -144,9 +146,9 @@ class Phptrigger
 		}
 
 		stream_set_timeout($this->socket, 5);
-		stream_set_blocking($this->socket, 0);
+		stream_set_blocking($this->socket, 1);
 
-		return true;
+		return $this->socket;
 	}
 
 	public function read($int = 8192 , $nb = false)
