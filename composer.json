@@ -1,0 +1,20 @@
+{
+	"name":"hushulin/maple",
+	"description":"A trigger for maple system (php)",
+	"keywords":["microframework", "rest", "router", "psr7"],
+	"license":"MIT",
+	"authors":[
+		{
+			"name":"hushulin",
+			"email":"hushulin12321@126.com",
+		},
+	],
+	"require":{
+		"php":">=5.2.0",
+	},
+	"autoload":{
+		"files":[
+			"phptrigger.php",
+		],
+	},
+}
