@@ -44,7 +44,7 @@ class Phptrigger
 	public $port;
 	private $headerlen1 = 60;
 	private $headerlen2 = 24;
-	private $magic = 2037952208;
+	private $magic = 2037952207;
 
 	function __construct($address , $port)
 	{
