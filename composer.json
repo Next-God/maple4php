@@ -14,7 +14,7 @@
 	},
 	"autoload":{
 		"files":[
-			"phptrigger.php"
+			"./phptrigger.php"
 		]
 	}
 }
